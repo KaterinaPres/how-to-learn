@@ -79,9 +79,154 @@
  
 }
 
+.description{
+  margin-top: 100px;
+  
+}
+.description__two-columns{
+  /*display: inline-block;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative;
+  width: 80vw;*/
+  white-space: nowrap;
+}
+
+.description__brief{
+  column-width: 175px;
+  line-height: 1.2;
+  font-size: 18px;
+  font-style: normal;
+  white-space: normal;	
+	display: inline-block;
+}
+
+.description__main-text{
+  column-width: 80vw;
+  min-width: 784px;
+  line-height: 34px;
+  font-size: 24px;
+  margin-left: 175px;
+  margin-right: 4%;
+}
+
+.description_main-text_paragraph{
+  margin-bottom: 10px;
+
+}
+
+.digits{
+  margin: 100px auto;
+  padding-top: 60px;
+  width: 1100px;
+
+}
+.digits-title{
+  width: 60vw;
+  line-height: 1.15;
+  font-size: 60px;
+  font-style: bold;
+  margin-bottom: 20px;
+  text-align: center;
+
+}
+
+.digits-subtitle{
+  width: 60vw;
+  line-height: 34px;
+  font-size: 24px;
+  font-style: normal;
+  text-align: center;
+}
+
+.table{
+ display: flex;
+ flex-wrap: wrap;
+ margin-top: 60px;
+ margin-left: auto;
+ margin-right: 0px;
+ margin-bottom: 0px;
+ 
+
+}
+.table__heading{
+  margin-bottom: 20px;
+  font-style: bold;
+  line-height: 1.15;
+  font-size: 24px;
+
+ }
+
+.table__cell_text_light{
+  line-height: 1.2;
+  font-size: 18px;
+  font-style: normal;
+ 
+}
 
 
-/* и элемента с модификатором вида ключ-значение */
+.table__cell_theme_light {
+  width: 250px;
+  color: black;
+  margin-right: 0;
+  list-style: none;
+  padding: auto;
+
+}
+
+.feynman {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 100vh;
+  height: 890px;
+  background-color: #f2f2f2;
+  justify-content: space-between;
+  flex-wrap: wrap;
+ 
+}
+.feynman__title {
+  display: flex;
+  font-size: 120px;
+  font-weight: bold;
+  line-height: 1.15;
+  position: relative;
+  width: 648px;
+  z-index: 3;
+  top: 100px;
+}
+
+.feynman__subtitle {
+  position: absolute;
+  top: 70px;
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 51px;
+  z-index: 3;
+  
+}
+
+.feynman__main-illustration {
+  height: 608px;
+  width: 765px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  z-index: 1;
+  
+}
+
+.feynman__link{
+  top: 50vh;
+  right: 48px;
+  background-color: cornflowerblue;
+  position: absolute;
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 51px;
+
+}
+
 .table__cell_theme_dark {
   width: 200px;
   color: white;
