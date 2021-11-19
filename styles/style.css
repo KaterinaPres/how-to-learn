@@ -190,14 +190,12 @@
   font-size: 120px;
   font-weight: bold;
   line-height: 1.15;
-  position: relative;
   width: 648px;
   z-index: 3;
   top: 100px;
 }
 
 .feynman__subtitle {
-  position: absolute;
   top: 70px;
   font-size: 36px;
   font-weight: normal;
@@ -227,9 +225,80 @@
 
 }
 
+.kaufman{
+  margin: 100px auto;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  background-color: black;
+  overflow: hidden; 
+  width: 100%;
+
+}
+.kaufman-title_dark{
+  width: 60vw;
+  line-height: 1.15;
+  font-size: 60px;
+  font-style: bold;
+  margin-bottom: 20px;
+  margin-top: 90px;
+  text-align: center;
+  color: white;
+
+  
+}
+
+.kaufman-subtitle_dark{
+  width: 60vw;
+  line-height: 34px;
+  font-size: 24px;
+  font-style: normal;
+  text-align: center;
+  color: white;
+}
+
+.kaufman__main-illustration_dark {
+  height: 877px;
+  width: 877px;
+  position: absolute;
+  bottom: 0px;
+  z-index: 1;
+  right: -210px;
+  
+}
+
+.table_dark {
+ display: flex;
+ flex-wrap: wrap;
+ margin-top: 0px;
+ margin-left: auto;
+ margin-right: auto;
+ margin-bottom: 90px;
+ list-style: none;
+ 
+
+}
 .table__cell_theme_dark {
   width: 200px;
   color: white;
   margin-right: 0;
   margin-top: 80px;
+
 }
+.table__cell_text_dark{
+  line-height: 1.2;
+  font-size: 18px;
+  font-style: normal;
+ 
+}
+
+.table__heading_dark{
+  margin-bottom: 20px;
+  font-style: bold;
+  line-height: 1.15;
+  font-size: 24px;
+
+ }
+
+
+
+
