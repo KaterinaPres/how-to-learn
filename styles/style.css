@@ -255,11 +255,13 @@
   background-color: #1f1f1f;
   overflow: hidden;
   position: relative;
+  padding: 90px 0 90px 0;
+
 }
 
 .section-title_theme_dark {
   max-width: 60%;
-  margin: 90px auto 20px auto;
+  margin: 0 auto 20px auto;
   text-align: center;
   color: white;
   position: relative;
@@ -271,7 +273,7 @@
 }
 
 .section-subtitle_theme_dark {
-  margin: 0 auto 0 auto;
+  margin: 0 auto;
   position: relative;
   max-width: 60%;
   text-align: center;
@@ -299,7 +301,7 @@
 .table_theme_dark {
   z-index: 10;
   align-items: flex-start;
-  margin: 0 auto 90px auto;
+  margin: 0 auto;
   padding: 0;
 }
 
