@@ -246,6 +246,7 @@
   right: 48px;
   padding: 0;
   top: 50%;
+  z-index: 10;
 }
 
 /*Тёмная таблица*/
