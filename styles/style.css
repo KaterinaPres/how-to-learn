@@ -1,3 +1,13 @@
+@import url(rotation\rotation.css);
+@keyframes rotation {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
+
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -19,11 +29,17 @@
   max-height: 756px;
   background-color: #f2f2f2;
   justify-content: space-between;
+  overflow: hidden;
 }
 
 .header__link {
   color: #2f80ed;
   text-decoration: none;
+}
+
+.header__link:hover {
+  opacity: .45;
+  transition: .3s;
 }
 
 .logo {
@@ -81,6 +97,89 @@
   right: 0;
   z-index: 1;
   margin: auto;
+  animation: rotation 20s linear infinite normal;
+}
+
+/*techniques*/
+.techniques {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 50px;
+}
+
+.cards {
+  display: flex;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 0;
+  justify-content: flex-start;
+  width: 920px;
+  flex-wrap: wrap;
+}
+
+.cards__item {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  width: 240px;
+  text-align: center;
+}
+
+.cards__item:last-child {
+  margin-bottom: 0px;
+  justify-content: flex-start;
+}
+
+.cards__image {
+  width: 160px;
+  height: 160px;
+  padding: 60px 40px 43px 40px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.cards__title {
+  font-weight: bold;
+  line-height: 1.15;
+  font-size: 24px;
+  padding: 0;
+  margin: 0 auto 16px auto;
+  
+}
+
+.cards__description {
+  line-height: 23px;
+  font-size: 18px;
+  font-weight: normal;
+  padding: 0;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/*video*/
+.video {
+margin: 100px 0 -60px 0;
+}
+.video__iframes {
+  padding: 0;
+  margin: 50px auto 0 auto;
+  max-width: 1050px;
+  display: flex;
+  justify-content: center;
+}
+
+.video__iframe {
+  width: 515px;
+  height: 316px;
+  padding: 0;
+  margin: 0 auto;
+  display: inline-block;
+}
+
+.video__iframe:first-child {
+  margin-right: 20px;
 }
 
 /*2 колонки*/
@@ -191,6 +290,14 @@
   margin-bottom: 0;
 }
 
+/*Оакли*/
+.oakley {
+  background-color: #f2f2f2;
+  padding: 0;
+  margin: 0 auto;
+  padding-top: 160px;
+}
+
 /*Фейман*/
 .feynman {
   position: relative;
@@ -249,6 +356,91 @@
   z-index: 10;
 }
 
+.feynman__link:hover {
+  opacity: .45;
+  transition: .3s;
+}
+/*Khan*/
+.khan{
+  margin: 0;
+  padding: 105px 0 0 0;
+  background-color: #f2f2f2;
+}
+
+.khan__container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.khan__author {
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+  font-weight: normal;
+  line-height: 42px;
+}
+
+.khan__title {
+  margin: 0;
+  padding: 0;
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 1.15;
+}
+
+.khan__quote {
+  margin: 50px 0 36px 0;
+  padding: 0;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 34px;
+  width: 790px;
+}
+
+.khan__quote-author {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.15;
+}
+
+.khan__quote-author-subline {
+  margin: 10px 0 0 0;
+  padding: 0;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 1.15;
+}
+
+.khan__book-container {
+  margin: 68px 0 0 0;
+  padding: 0;
+  position: relative;
+}
+
+.khan__book-pic {
+  margin: 0 48px 0 0;
+  padding: 0;
+}
+
+.khan__buy-link {
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+  font-weight: normal;
+  line-height: 42px;
+  position: absolute;
+  top: 0;
+  text-decoration: none;
+  color: #2f80ed;
+}
+
+.khan__buy-link:hover {
+  opacity: .45;
+  transition: .3s;
+}
+
 /*Тёмная таблица*/
 .kaufman {
   background-color: #1f1f1f;
@@ -295,6 +487,7 @@
   top: 0;
   margin: 0;
   padding: 0;
+  animation: rotation 20s linear infinite normal;
 }
 
 .table_theme_dark {
@@ -323,6 +516,29 @@
   margin: 80px 0 20px 0;
   padding: 0;
 }
+
+/*ссылки*/
+.resources{
+  margin: 100px 0 217px 0;
+  padding: 0;
+}
+
+.resources__logo-zone{
+  margin: 80px auto 0 auto;
+  padding: 0;
+  width: 1100px;
+  display: flex;
+  justify-content: center;
+}
+
+.resources__logo{
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  width: 270px;
+  height: 38px;
+}
+
 
 /*Подвал*/
 .footer {
@@ -379,7 +595,6 @@
   margin: 0 0 18px 0;
   padding: 0;
   list-style-type: none;
-
 }
 
 .footer__column-link {
@@ -387,6 +602,11 @@
   margin: 0;
   padding: 0;
   color: #f2f2f2;
+}
+
+.footer__column-link:hover {
+  opacity: .45;
+  transition: .3s;
 }
 
 .footer__social-icon {
