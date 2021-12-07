@@ -4,7 +4,7 @@
     padding: 0;
     margin: 0 auto;
     display: inline-block;
-    border:none;
+    border: none;
 }
 
 .video__iframe:first-child {
