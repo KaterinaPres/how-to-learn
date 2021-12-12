@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     color: #f2f2f2;
+    transition: 1s;
 }
 
 .footer__column-link:hover {
